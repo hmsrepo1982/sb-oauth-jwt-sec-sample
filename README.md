@@ -64,5 +64,24 @@ NOTE  : If Resource Owner - agrees, then Resource Host can move forward since se
 
 8. Photo will be allowed to download or print.
 
+BIG FLOW : 
+
+Authorization between services - ( Micro Services ) - Good fit 
+
+MS 1 - MS 2 calls 
+
+MS2 - has access to DB.
+
+Now burden of security on MS2 so that it wont give access to MS1 in some cases.
+
+How data needs to flow.
+
+MS1 -------1. calls Auth Server------- Auth Server
+
+2. Gets the Access Token.
+
+3. Calls MS2 with access token. 
+
+4. If Access is allowed, then serves the MS1. Else Rejects the access for Data ( Eg : Payroll information ) 
 
 Use case to understand this : Diagram is below.
