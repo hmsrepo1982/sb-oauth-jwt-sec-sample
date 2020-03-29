@@ -85,3 +85,6 @@ MS1 -------1. calls Auth Server------- Auth Server
 4. If Access is allowed, then serves the MS1. Else Rejects the access for Data ( Eg : Payroll information ) 
 
 Use case to understand this : Diagram is below.
+
+Oauth Workflow.png Diagram.
+
