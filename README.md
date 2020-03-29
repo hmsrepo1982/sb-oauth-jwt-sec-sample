@@ -44,5 +44,25 @@ NOTE  : If Resource Owner - agrees, then Resource Host can move forward since se
 
 10. Photo will be allowed to download or print.
 
+Authorization Code Flow - Implicit Style  - ( Less Secure compared to Other one ) : 
+
+1. Logged on Photo print Service.
+
+2. Want to print photo.
+
+3. Photo printing Service --> calls - Authorization Server.
+
+4. Now Authorization server unless Resource Owner Agrees, will not proceed further. So he sends a request to # Resource Owner.
+
+NOTE  : If Resource Owner - agrees, then Resource Host can move forward since security ownership is on HOST.
+
+5. Now Authorization server sends Access Token back to PPService.
+
+6. Now this would call Resource Host Server --> with Access Code.
+
+7. Resource will be returned if Access Code is valid since Resource host has access to Access Code generated.
+
+8. Photo will be allowed to download or print.
+
 
 Use case to understand this : Diagram is below.
